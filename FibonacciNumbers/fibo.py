@@ -22,8 +22,6 @@ def Fibo2(n):
     else:
         for i in range(3, n + 1):
             result = answer[0] + answer[1]
-            # answer[0] = answer[1]
-            # answer[1] = result
             answer[0], answer[1] = answer[1], result
 
     return result
