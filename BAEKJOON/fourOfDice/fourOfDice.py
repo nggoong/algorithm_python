@@ -13,7 +13,7 @@ for i in range(int(input())):
         elif arr[1] == arr[2]:
             answer.append(10000 + (arr[1] * 1000))
 
-        
+
     elif len(set(arr)) == 3:
         if arr[0] == arr[1] or arr[2] == arr[0]:
             answer.append(1000 + (arr[0] * 100))
@@ -25,5 +25,3 @@ for i in range(int(input())):
 
 
 print(max(answer))
-
-
