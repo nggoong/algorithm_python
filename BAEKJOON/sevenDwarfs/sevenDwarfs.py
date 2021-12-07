@@ -1,22 +1,17 @@
-heights = [0] * 9
-heightsSum = 0
-for i in range(9):
-    height = int(input())
-    heights[i] = height
-    heightsSum += height
+heights = [int(input()) for i in range(9)]
+heightsSum = sum(heights)
 
-
+copyArr = sorted(heights)
 
 for i in range(9):
-    copyArr = []
     for j in range(i + 1, 9):
         if heightsSum - (heights[i] + heights[j]) == 100:
-            copyArr = sorted(heights)
-            copyArr.remove(heights[i])
-            copyArr.remove(heights[j])
-            
-            for k in copyArr:
-                print(k)
+
+            for k in range(9):
+                if copyArr[k] == heights[i] or copyArr[k] == heights[j]:
+                    continue
+                else:
+                    print(copyArr[k])
 
 
     
