@@ -21,7 +21,7 @@ for i in range(int(input())):
         elif arr[1] == arr[2]:
             answer.append(1000 + (arr[1] * 100))
     elif len(set(arr)) == 4:
-        answer.append(arr[3] * 500)
+        answer.append(arr[3] * 100)
 
 
 print(max(answer))
