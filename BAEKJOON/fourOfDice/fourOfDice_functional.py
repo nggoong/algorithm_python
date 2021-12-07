@@ -7,7 +7,7 @@ def func(arr):
         if arr[1] == arr[2]:
             result = 10000 + (arr[1] * 1000)
 
-        else:
+        elif arr[1] != arr[2]:
             result = 2000 + (arr[0] * 500) + (arr[2] * 500)
         
     elif len(set(arr)) == 3:
